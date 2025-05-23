@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.HashMap;
 
-class Solution {
+class TwoSum {
     static int[] twoSum(int[] nums, int target) {
         int[] indices = new int[2];
 
