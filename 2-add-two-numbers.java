@@ -70,13 +70,12 @@ class AddTwoNumbers {
     }
 
     public static void main(String[] args) {
-        ListNode node3 = new ListNode(3);
+        ListNode node3 = new ListNode(9);
         ListNode node2 = new ListNode(2, node3);
-        ListNode node1 = new ListNode(1, node2);
+        ListNode node1 = new ListNode(6, node2);
 
-        ListNode node6 = new ListNode(6);
-        ListNode node5 = new ListNode(5, node6);
-        ListNode node4 = new ListNode(4, node5);
+        ListNode node5 = new ListNode(7);
+        ListNode node4 = new ListNode(8, node5);
 
         System.out.println("node1: " + node1.toString());
         System.out.println("node4: " + node4.toString());
