@@ -1,14 +1,15 @@
 package main
 
 func main() {
-	twoSum([]int{1, 2, 3, 4}, 5)
+	twoSumBrute([]int{1, 2, 3, 4}, 5)
 	// var results []int = twoSum([]int{1, 2, 3, 4}, 5)
 	// for i := range results {
 	// 	println(results[i])
 	// }
+	twoSumMap([]int{1, 2, 3, 4}, 5)
 }
 
-func twoSum(nums []int, target int) []int {
+func twoSumBrute(nums []int, target int) []int {
 	var results = []int{}
 
 	for i := range nums {
@@ -22,6 +23,22 @@ func twoSum(nums []int, target int) []int {
 		if len(results) > 0 {
 			break
 		}
+	}
+
+	return results
+}
+
+func twoSumMap(nums []int, target int) []int {
+	var results = []int{}
+	var differences = make(map[int]int)
+
+	for i, value := range nums {
+		if index, ok := differences[value]; ok {
+			results = append(results, index, i)
+			break
+		}
+
+		differences[target-value] = i
 	}
 
 	return results
