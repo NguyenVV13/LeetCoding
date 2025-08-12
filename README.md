@@ -1,1 +1,1 @@
-This repository is simply used for the purpose of storing my solutions to LeetCode problems. This way, I can pull and push updates to LeetCode problems between devices, and others can view my coding practices.
+This repository is simply used for the purpose of storing my solutions to LeetCode problems and Codewars kata. This way, I can pull and push updates to LeetCode problems between devices, and others can view my coding practices.
