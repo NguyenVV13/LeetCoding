@@ -16,14 +16,14 @@ func ReverseWords(str string) string {
 
 	// Get each word
 	for _, word := range words {
-		var reverse string = ""
+		var reverse string
 
 		// Get each character and make a new word that's reversed
 		for _, char := range word {
 			reverse = string(char) + reverse
 		}
 
-		reverses = append(reverses, string(reverse))
+		reverses = append(reverses, reverse)
 	}
 
 	return strings.Join(reverses, " ") // reverse those words
